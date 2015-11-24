@@ -1,0 +1,16 @@
+<div>
+  <h4>Datos personales</h4>
+  <label>
+    Ingresa tu nombre
+    <input type="text" placeholder="Nombre" ng-model="form.nombre">
+  </label>
+<label>
+   Ingresa tu apellido
+    <input type="text" placeholder="Apellido" ng-model="form.apellido">
+  </label>
+  <pre>{{data}}</pre>
+  <select ng-model="variable" ng-options="item.id as item.detail for item in details">
+    <option value="">Selecciona edtalle</option>
+  </select>
+  <a ui-sref="form.address" class="btn btn-primary">Siguiente</a>
+</div>
