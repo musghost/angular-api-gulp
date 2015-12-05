@@ -25,6 +25,12 @@
         url: '',
         templateUrl: 'app/main/form.index.html'
       })
+      .state('form.edit', {
+        url: '/:id',
+        templateUrl: 'app/main/form.edit.html',
+        controller: 'EditController'
+      })
+
       .state('form.address', {
         url: '/address',
         templateUrl: 'app/main/form.address.html'
